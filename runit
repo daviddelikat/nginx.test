@@ -1,3 +1,9 @@
 
-/usr/sbin/nginx -c `pwd`/test.conf -s reload
+nginx_bin=/usr/local/nginx/sbin/nginx
+
+#nginx_bin=/usr/sbin/nginx
+
+$nginx_bin -c `pwd`/test.conf -s reload
+#$nginx_bin -c `pwd`/test.conf 
+#$nginx_bin -c `pwd`/test.conf -s stop
 
